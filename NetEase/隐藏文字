@@ -1,0 +1,37 @@
+    1、display:none;
+　　搜索引擎可能认为被隐藏的文字属于垃圾信息而被忽略，不为隐藏的对象保留物理占位空间
+　　
+　　2、visibility:hidden;
+　　和display:none;相对应，为隐藏的对象保留物理占位空间。
+　　
+　　3、overflow:hidden;
+　　.texthidden{
+    　　display:block;
+    　　overflow:hidden;
+    　　width:0;
+    　　height:0;
+　　}
+　　
+　　4、positon:absolute;
+　　用绝对定位将其推出可视区，仍占据物理空间，与隐藏文字的宗旨相背
+　　.texthidden{
+    　　positon:absolute;
+    　　margin-top:-9999px;
+    　　margin-left:-9999px;
+　　}
+　　
+　　5、text-indent:-9999px；
+　　把h1作为一个块来显示（display:block;），
+    指定长宽（和图片一样大小），然后指定h1的背景图片，
+    仍然是作为字符形式出现的博客标题，
+    然后用text-indent:-9999px;将文字甩到屏幕看不到的地方
+　　
+　　h1 a{
+    　　height:30px;
+    　　width:165px;
+    　　text-indent:-9999px;
+    　　background-image:url(images/logo.gif);
+    　　background-repeat:no-repeat;
+    　　display:block;
+　　}
+　　

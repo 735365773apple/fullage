@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>NetEase</title>
+
+    <!--依赖的外部文件-->
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <!-- 设置相应的参数 -->
+    <script type="text/javascript">
+        $(function(){
+            $.fn.fullpage({
+                /*设置背景颜色*/
+                slidesColor: ["#1bbc9b", "#4BBFC3", "#7BAABE", "#f90","#1bbc9b", "#4BBFC3", "#7BAABE", "#f90","#1bbc9b", "#4BBFC3"],
+                /*内容是否垂直居中*/
+                verticalCentered: false,
+                /*数组，用于定义锚链接，跳转相应页面*/
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10'],
+                /*是否显示导航项目,即右侧圆点，默认false*/
+                navigation: true,
+                /*定义导航名称*/
+                navigationTooltips: ['首页', '视觉', '交互', '皮肤', '功能', '待办邮件', '联系人邮件', '科技', '连接易信', '马上体验'],
+                /*定义导航位置,默认right,注意参数值是字符串*/
+                navigationPosition: "right",
+
+                /*滚到底部之后是否滚回顶部,默认值false*/
+                loopBottom:false
+
+            });
+        });
+    </script>
+</head>
+<body>
+
+<!--必须使用section这个类名-->
+<section class="section section1">
+    <!--1.背景图-->
+    <div class="bg"><img src="images/section1.jpg" alt=""></div>
+
+    <!--2.中间部分内容-->
+    <!--<div class="bg11"></div>-->
+    <div class="bg12"></div>
+    <div class="bg13"></div>
+
+    <!--3.顶部以及中间的内容-->
+    <div class="mail">
+        <a class="mail-163" href="#">163邮箱</a>
+        <a class="mail-126" href="#">126邮箱</a>
+        <a class="mail-yeah" href="#">yeah邮箱</a>
+    </div>
+    <div class="hgroup">
+        <h1><a href="#">网易邮箱6.0</a></h1>
+        <h2>改变，不止所见。</h2>
+    </div>
+
+</section>
+<section class="section section2"></section>
+<section class="section section3"></section>
+<section class="section section4"></section>
+<section class="section section5"></section>
+<section class="section section6"></section>
+<section class="section section7"></section>
+<section class="section section8"></section>
+<section class="section section9"></section>
+<section class="section section10"></section>
+
+</body>
+<script>
+
+</script>
+</html>
